@@ -1,4 +1,4 @@
-# Check the versions of libraries
+# Check the versions of libraries needed for the tutorial
  
 # Python version
 import sys
