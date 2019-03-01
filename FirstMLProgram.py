@@ -18,28 +18,28 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(url, names=names)
 
 # shape
-#print(dataset.shape)
+print(dataset.shape)
 
 # head
-#print(dataset.head(20))
+print(dataset.head(20))
 
 # descriptions
-#print(dataset.describe())
+print(dataset.describe())
 
 # class distribution
-#print(dataset.groupby('class').size())
+print(dataset.groupby('class').size())
 
 # box and whisker plots
-#dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-#plt.show()
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
 
 # histograms
-#dataset.hist()
-#plt.show()
+dataset.hist()
+plt.show()
 	
 # scatter plot matrix
-#scatter_matrix(dataset)
-#plt.show()
+scatter_matrix(dataset)
+plt.show()
 
 # Split-out validation dataset
 array = dataset.values
@@ -73,12 +73,12 @@ for name, model in models:
 	print(msg)
 
 # Compare Algorithms
-#fig = plt.figure()
-#fig.suptitle('Algorithm Comparison')
-#ax = fig.add_subplot(111)
-#plt.boxplot(results)
-#ax.set_xticklabels(names)
-#plt.show()
+fig = plt.figure()
+fig.suptitle('Algorithm Comparison')
+ax = fig.add_subplot(111)
+plt.boxplot(results)
+ax.set_xticklabels(names)
+plt.show()
 
 # Make predictions on validation dataset
 knn = KNeighborsClassifier()
