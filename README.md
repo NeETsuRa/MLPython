@@ -1,2 +1,2 @@
 # MLPython
-Mashine learning with Python
+Basic python comands used in the Mashine learning part of the Python development.
