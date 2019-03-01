@@ -1,4 +1,4 @@
-# Check the versions of libraries needed for the tutorial
+# Check the versions of libraries needed for the tutorial. If any of them missing please install the packages (anaconda or pmp)
  
 # Python version
 import sys
